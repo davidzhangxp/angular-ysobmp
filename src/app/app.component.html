@@ -1,0 +1,6 @@
+<div>
+  <app-person-form (addPeople)="addPerson($event)"></app-person-form>
+</div>
+<div *ngFor="let person of people">
+  <app-person [person]="person" (deleteMe)="deletePerson($event)"></app-person>
+</div>
